@@ -1,7 +1,7 @@
 # EP 2019-1: Escape Insper
 #
 # Alunos: 
-# - aluno A: Fulano da Silva, fulanos@insper.edu.br
+# - aluno A: Fernando Kenji Sakabe, fernando.sakabe@al.insper.edu.br
 # - aluno B: Sicrano de Almeida, sicranoa1@insper.edu.br
 
 def carregar_cenarios():
@@ -42,6 +42,12 @@ def carregar_cenarios():
 
 
 def main():
+    cenarios, nome_cenario_atual=carregar_cenarios()
+    print(cenarios[nome_cenario_atual]["titulo"])
+    print("-"*len(cenarios[nome_cenario_atual]["titulo"]))
+    print(cenarios[nome_cenario_atual]["descricao"])
+
+    
     print("Na hora do sufoco!")
     print("------------------")
     print()
@@ -84,3 +90,5 @@ def main():
 # Programa principal.
 if __name__ == "__main__":
     main()
+
+
